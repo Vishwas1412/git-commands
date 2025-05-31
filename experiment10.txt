@@ -1,0 +1,12 @@
+Experiment 10:
+a. Last 5 commits
+git log -5 --oneline
+# Output:
+# abc1234 Commit 5
+# def5678 Commit 4
+
+b. Commits by JohnDoe in 2023
+git log --author="JohnDoe" --since="2023-01-01" --until="2023-12-31" --pretty=format:"%h %ad | %s [%an]" --date=short
+# Output:
+# cde4567 2023-05-20 | Fix bug [JohnDoe]
+# abc1234 2023-03-10 | Add login [JohnDoe]

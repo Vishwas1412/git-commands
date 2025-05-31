@@ -1,0 +1,23 @@
+Experiment 4: Branching, Merging, and Rebasing
+
+git branch new-feature
+git checkout new-feature
+# Output:
+# Switched to branch 'new-feature'
+
+echo "Feature added" >> feature.txt
+git add .
+git commit -m "Add feature"
+# Output:
+# [new-feature 789ghi1] Add feature
+
+git checkout main
+git merge new-feature
+# Output:
+# Updating abc1234..789ghi1
+# Fast-forward
+
+git checkout new-feature
+git rebase main
+# Output:
+# Successfully rebased and updated refs/heads/new-feature.

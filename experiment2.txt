@@ -1,0 +1,19 @@
+Experiment 2: Cloning and Pushing to Remote Repository
+
+git clone https://github.com/user/example-repo.git
+# Output:
+# Cloning into 'example-repo'...
+# remote: Enumerating objects: 10, done.
+
+cd example-repo
+echo "More content" >> file.txt
+git add file.txt
+git commit -m "Updated file"
+# Output:
+# [main 456def7] Updated file
+# 1 file changed, 1 insertion(+)
+
+git push origin main
+# Output:
+# To https://github.com/user/example-repo.git
+# abc1234..456def7  main -> main

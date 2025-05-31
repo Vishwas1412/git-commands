@@ -1,0 +1,7 @@
+Experiment 8: Show Last 5 Commits
+
+git log -n 5 --oneline
+# Output:
+# def6789 Revert "Add feature"
+# 456def7 Updated file
+# abc1234 Initial commit

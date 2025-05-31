@@ -1,0 +1,14 @@
+Experiment 6: Feature Branch Workflow, Pull Requests, Code Review
+
+git checkout -b feature-auth
+# Output:
+# Switched to a new branch 'feature-auth'
+
+echo "Auth logic" > auth.py
+git add auth.py
+git commit -m "Add authentication"
+git push origin feature-auth
+# Output:
+# [new branch]      feature-auth -> feature-auth
+
+# Pull requests and code reviews are done via GitHub/GitLab interface.

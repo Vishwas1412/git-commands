@@ -1,0 +1,16 @@
+Experiment 3: Pulling, Fetching, Merging
+
+git pull origin main
+# Output:
+# Already up to date.
+
+git fetch origin
+# Output:
+# From github.com:user/example-repo
+#  * branch            main       -> FETCH_HEAD
+
+git merge origin/main
+# Output (if changes exist):
+# Updating 1234abc..5678def
+# Fast-forward
+# file.txt | 1 +

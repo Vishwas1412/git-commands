@@ -1,0 +1,13 @@
+Experiment 5: Stashing, Switching Branch, Applying Stash
+
+echo "Temp changes" >> temp.txt
+git stash
+# Output:
+# Saved working directory and index state WIP on new-feature: abc1234 Add feature
+
+git checkout main
+git stash apply
+# Output:
+# On branch main
+# Changes not staged for commit:
+#	modified:   temp.txt

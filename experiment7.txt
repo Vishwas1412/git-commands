@@ -1,0 +1,25 @@
+Experiment 7: Git Stash, Interactive Rebase, Tags, Reset & Revert
+
+git stash
+git stash list
+# Output:
+# stash@{0}: WIP on main: abc1234 Add feature
+
+git rebase -i HEAD~2
+# Output:
+# pick abc1234 Add feature
+# pick def5678 Fix bug
+
+git tag -a v1.0 -m "Release 1.0"
+git push origin v1.0
+# Output:
+# * [new tag]         v1.0 -> v1.0
+
+git reset --soft HEAD~1
+git reset --hard HEAD~1
+# Output:
+# HEAD is now at abc1234 Previous commit
+
+git revert abc1234
+# Output:
+# [main def6789] Revert "Add feature"

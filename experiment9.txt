@@ -1,0 +1,7 @@
+Experiment 9: Cherry-pick a Range of Commits
+
+git checkout target-branch
+git cherry-pick abc1234^..def4567
+# Output:
+# [detached HEAD abc1234] Commit message 1
+# [detached HEAD def4567] Commit message 2
